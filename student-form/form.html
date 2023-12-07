@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentForm</title>
+    <style>
+        .form-div{
+            position: relative;
+            width: 300px;
+            left:450px; 
+            padding: 10px; 
+            font-size: 120%;
+            border: 2px solid;
+            background-color: antiquewhite;
+        }
+        .form-div form label{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Internship Registration Form</h2>
+    </center>
+    <div style="text-align: center;" class="form-div">
+        <form>
+            <label>Student Name</label><br>
+            <input type="text" id="name" placeholder="Name" required>
+            <br>
+            <br>
+            <label>Student USN</label><br>
+            <input type="text" id="usn" placeholder="USN" required>
+            <br>
+            <br>
+            <label>Branch<br>
+                <input type="radio" name="branch">CSE<br>
+                <input type="radio" name="branch">ISE<br>
+                <input type="radio" name="branch">AIML<br>
+                <input type="radio" name="branch">ECE<br>
+                <input type="radio" name="branch">EEE<br>
+                <input type="radio" name="branch">MECH<br>
+                <br>
+            <label>Email<br>
+            <input type="Email" placeholder="email" required></label><br>
+            <br>
+            <label>Phone Number<br>
+            <input type="tel" placeholder="phone no" required></label><br>
+            <br>
+            <label>Date Of Birth<br>
+                <input type="date" required>
+            </label><br>
+            <br>
+            <label>Gender<br>
+            <select>
+                <option>Female</option>
+                <option>Male</option>
+            </select>
+        </label><br>
+        <br>
+        <label>
+            Select any two<br>
+            <input type="checkbox" >AI in Security<br>
+            <input type="checkbox" >Full Stack Development with AIML<br>
+            <input type="checkbox" >Digital Forensics and Ethical Hacking<br>
+            <input type="checkbox" >Generative AI and ChatGPT<br>
+            <input type="checkbox" >Enterprisal Pentesting<br>
+        </label>
+        <br>
+        <label for="textarea">Comments:</label>
+        <textarea id="textarea" name="textarea" rows="7" cols="30"></textarea>
+        <br><br>
+        <button>Submit</button>
+        <p>1BG21CS113</p>
+        
+        </form>
+    </div>
+</body>
+</html>
